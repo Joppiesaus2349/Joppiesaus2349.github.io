@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Videos – Energy Videos</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Energy Videos</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="videos.html">Videos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container main-content">
+      <h2>Videos</h2>
+      <p class="lead">A curated list of short videos about energy. Click a thumbnail to play.</p>
+
+      <div id="videos-list" class="videos-grid">
+        <!-- Videos will be injected here -->
+      </div>
+
+      <template id="video-card-template">
+        <article class="video-card">
+          <div class="thumb-wrap">
+            <button class="play-thumb" aria-label="Play video"></button>
+            <img class="thumb" src="" alt="">
+          </div>
+          <h3 class="video-title"></h3>
+          <p class="video-desc"></p>
+        </article>
+      </template>
+
+      <div id="player-modal" class="modal" hidden>
+        <div class="modal-content">
+          <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+          <div id="player-area"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2025 Energy Videos</div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

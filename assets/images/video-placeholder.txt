@@ -1,0 +1,2 @@
+Add thumbnail images (jpg/png) here. Example: sample-solar.jpg
+You can also set custom thumbnails in data/videos.json by setting "thumbnail" to the image path.

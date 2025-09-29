@@ -1,0 +1,16 @@
+[
+  {
+    "id": "dQw4w9WgXcQ",
+    "type": "youtube",
+    "title": "What is Energy? — Short explainer",
+    "description": "A short explainer about what energy is and how it's used.",
+    "thumbnail": "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
+  },
+  {
+    "type": "local",
+    "src": "assets/videos/sample-energy.mp4",
+    "title": "Local sample: Solar panel demo",
+    "description": "A short demo video about solar panels.",
+    "thumbnail": "assets/images/sample-solar.jpg"
+  }
+]

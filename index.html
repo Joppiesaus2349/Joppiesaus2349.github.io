@@ -1,63 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Joppiesaus2349 Homepage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f8f9fa;
-            color: #222;
-        }
-        header {
-            background: #4a90e2;
-            color: #fff;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            color: #888;
-            font-size: 0.9rem;
-        }
-    </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Energy Videos</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Joppiesaus2349's Homepage</h1>
-        <p>Your personal website on GitHub Pages</p>
-    </header>
-    <main>
-        <h2>About Me</h2>
-        <p>
-            Hi! I'm Joppiesaus2349. This is my homepage hosted on GitHub Pages.
-            Here you'll find my projects, blog posts, and more.
-        </p>
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="#">Project 1</a></li>
-            <li><a href="#">Project 2</a></li>
-            <li><a href="#">Project 3</a></li>
-        </ul>
-        <h2>Contact</h2>
-        <p>
-            You can reach me via <a href="mailto:your.email@example.com">email</a>.
-        </p>
-    </main>
-    <footer>
-        &copy; 2024 Joppiesaus2349
-    </footer>
+        <header class="site-header">
+            <div class="container">
+                <h1>Energy Videos</h1>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="videos.html">Videos</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container main-content">
+            <section class="hero">
+                <h2>Short, clear videos about energy</h2>
+                <p>Browse videos explaining energy concepts, technologies and sustainability.</p>
+                <p><a class="btn" href="videos.html">Browse videos</a></p>
+            </section>
+
+            <section class="about">
+                <h3>About this site</h3>
+                <p>This is a lightweight static site scaffold. Put local video files into <code>assets/videos/</code> and edit <code>data/videos.json</code> to add entries (or use YouTube IDs).</p>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">© 2025 Energy Videos • Built with a simple scaffold</div>
+        </footer>
+
+        <script src="assets/js/main.js" defer></script>
 </body>
 </html>

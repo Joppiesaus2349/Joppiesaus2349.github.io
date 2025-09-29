@@ -1,0 +1,33 @@
+:root{
+  --bg:#f6f7f9;
+  --card:#fff;
+  --accent:#0b74de;
+  --text:#0b1a2b;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:var(--text);}
+.container{max-width:980px;margin:0 auto;padding:1rem}
+.site-header{background:linear-gradient(90deg,var(--accent),#3aa0ff);color:#fff;padding:1rem 0}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.site-header nav a{color:rgba(255,255,255,0.95);margin-left:1rem;text-decoration:none}
+.main-content{padding:2rem 1rem}
+.hero{background:var(--card);padding:1.5rem;border-radius:8px;box-shadow:0 6px 18px rgba(9,30,66,.08)}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.5rem .9rem;border-radius:6px;text-decoration:none}
+.about{margin-top:1rem}
+.videos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;margin-top:1rem}
+.video-card{background:var(--card);padding:.6rem;border-radius:8px;box-shadow:0 6px 18px rgba(9,30,66,.06)}
+.thumb-wrap{position:relative;border-radius:6px;overflow:hidden}
+.thumb{width:100%;height:140px;object-fit:cover;display:block}
+.play-thumb{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:52px;height:52px;border-radius:50%;background:rgba(11,116,222,.9);border:0;color:#fff;font-size:20px;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.video-title{font-size:1rem;margin:.5rem 0 .25rem}
+.video-desc{font-size:.9rem;color:#334}
+.site-footer{padding:1rem 0;text-align:center;color:#556}
+.modal{position:fixed;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;padding:1rem}
+.modal-content{background:#000;max-width:900px;width:100%;border-radius:8px;overflow:hidden;position:relative}
+.modal-close{position:absolute;right:8px;top:8px;background:transparent;border:0;color:#fff;font-size:20px;cursor:pointer}
+#player-area video, #player-area iframe{width:100%;height:520px;display:block;border:0}
+
+@media (max-width:600px){
+  #player-area video, #player-area iframe{height:280px}
+  .thumb{height:120px}
+}
